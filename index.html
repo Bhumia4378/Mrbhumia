@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html>
+<title>Face a book</title>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+    <meta name="theme-color" content="#000000">
+</head>
+
+<style>
+    .p1 {
+        font-family: "Lucida Console", "Courier New", monospace;
+
+        color: white;
+
+    }
+
+    .heading {
+
+        color: red;
+    }
+
+    .welcome {
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .overlay {
+        position: fixed;
+        display: none;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+font-size:130%;
+
+    }
+
+    #name {
+        background: linear-gradient(to right, red, orange, white, green, green);
+        -webkit-background-clip: text;
+
+        color: #7d7961;
+
+    }
+
+
+    .collapsible {
+        background-color: #3c3e66;
+        color: red;
+        cursor: pointer;
+        padding: 18px;
+        border: 0.5px solid black;
+        width: 100%;
+        font-size: 5vw;
+
+        text-align: left;
+        outline: 4px;
+
+    }
+
+    .content {
+background-image: repeating-linear-gradient(45deg, #9799bd, grey,#9799bd,#9799bd);
+background-size:5px 5px;
+        border: 2px double red;
+        padding: 18px;
+        display: none;
+        font-size: 2vw;
+        overflow: hidden;
+        background-color: #9799bd;
+
+    }
+
+    .fb {
+        color: white;
+        z-index: 3;
+        opacity: 0;
+        position: fixed;
+        left: 3%;
+        animation: aymo 2s infinite;
+        top: 0%;
+        font-size: 35px;
+        transition: opacity 9s;
+    }
+
+    @keyframes aymo {
+
+        100% {
+            transform: rotate(-360deg);
+        }
+
+    }
+
+    .dp {
+        position: relative;
+        width: 50%;
+        height: auto;
+        opacity: 1;
+
+        z-index: 2;
+        margin: 20px auto;
+        display: flex;
+        filter: blur(600px);
+        border-radius: 50%;
+        justify-content: center;
+        border: 10px double;
+        border-color: #414a54;
+        transition: border-radius 2s, border-color 3s, filter 4s;
+    }
+
+    .name {
+        width: fit-content;
+        margin: auto;
+        font-size: 50px;
+        text-align: center;
+        opacity: 1;
+        padding: 10px 40px;
+        border: 0.5px solid black;
+
+        transition: color 12s;
+
+
+
+    }
+
+    #name:hover {
+       color-opacity:1 ;
+    }
+
+    .dp:hover {
+        border-radius: 1%;
+        border-color: grey;
+    }
+
+
+    .pic {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+        text-align: center;
+        top: 10vw;
+        opacity: 0;
+        transition: opacity 4s;
+        z-index: -1;
+    }
+.btn{color:white;
+background-color:grey;
+border:1px dashed white;
+border-radius:60px;
+z-index:1;
+position: relative;
+left:85%;}
+</style>
+
+
+<body style="background-color: black;" onscroll="document.getElementById('name').style.borderColor='yellow',
+
+
+document.getElementById('dp').style.filter='blur(0px)',
+document.getElementById('pic').style.opacity='1',
+document.getElementById('fb').style.opacity='1',
+document.getElementById('name').style.color='transparent',
+setTimeout(Writer,3500);
+" ;>
+
+
+
+    <div id="boby">
+        <marquee style="color:red" class="heading" direction="left" behavior="scroll" id= "marq">
+            ****  This page is best viewed on Google Chrome on mobile devices with javascript enabled. Every element on this page is made to  be interactive. ****</marquee>
+
+
+        <p class="fb" id="fb" onclick="alert('Error 404.Work In progress.' )">
+            <b>☀️</b>
+        </p>
+
+        <p style="background-color: yellow;text-align:center" ; onclick="redirect ()">
+            <b id="wlcm" > WELCOME TO THE PROFILE</b>
+        </p>
+
+
+
+<div  id=" bt">
+
+<button class="btn" id="ping" onclick="timu()">Ping</button>
+<button class="btn" id="project"
+onclick=tada()>Project</button>
+</div>
+
+
+
+        <div class="pic" id="pic" style="height:20vw" onclick=document.getElementById(pic).style.opacity='1' ;>
+            <img src="https://i.gifer.com/2RNf.gif" ; https://i.gifer.com/2RNf.gif ; https://i.ibb.co/m8rKpct/IMG-20210920-143732.jpg>
+
+        </div>
+        <img src="dpme.jpg"
+            alt="DP is loading or may not be available for now." class="dp" id="dp"><br>
+        <p class="name" id="name">
+            Sangram Bhumia
+        </p><br><br>
+
+        <div class="p1" id="demo" style="font-size:4vw; height:70vw;">
+
+
+        </div>
+        <br>
+        <div>
+
+            <button type="button" class="collapsible">About</button>
+            <div class="content">
+                <p>
+                    <b>
+
+
+                        Nick Name: Bhumia. <br> Born in -1998. <br>
+
+
+
+                        Place-Nabrangpur, Odisha. <br>
+                        Languages known-Odia,Hindi,English. <br> <b></b></b>
+                </p>
+                <b><b> </b></b>
+            </div><br>
+            <b><b>
+                    <button type="button" class="collapsible" id="collapsible">Education</button>
+                    <div class="content">
+                        <p>
+                            <b>Masters in Agricultural Biotechnology, OUAT, Bhubaneswar.<br>
+
+                                <br> Graduation-<br>OUAT(Odisha University of Agriculture & Technology), Sambalpur
+                                (2017-2021).
+                                <br><br>
+                                School-<br>JNV, KTG, Nabrangpur (2009-2016).<br>
+                                <br>
+                            </b>
+                        </p>
+                    </div><br>
+                    <b>
+                        <button type="button" class="collapsible">Interests</button>
+                        <div class="content">
+                            <p>
+                                <b>
+                                    Interested and a keen learner of <br />
+                                    -General Science <br />
+                                    -Environment and ecosystem<br>
+                                    -Electronics <br />
+                                    -Technology<br> -Automation <br> -Computer science & Coding<br />
+                                    -IOT(Internet Of Things)<br />-Psychology
+                                    <br><br>
+                                    <span style="color:#3b3935"> It shall be the duty of every citizen of India to
+                                        develop scientific temper, humanism and the spirit of inquiry and reform.</span>
+
+                                    <br> </b>
+                            </p>
+                        </div>
+                        <br>
+                        <button type="button" class="collapsible">Hobbies</button>
+                        <div class="content">
+                            <p>
+                                <b>
+                                    A hell lot of gaming.<br />
+                                    A little bit of R&D.<br />
+                                    Some creativity and DIY. <br>Arts.<br>Reading.<br> Web surfing .<br>Experimenting
+                                    .<br>Tinkering and tweaking .<br>
+                            </p>
+                    </b>
+        </div><br>
+        <button type="button" class="collapsible" >More info</button>
+        <div class="content">
+            <p>
+                <b>
+                    Open mindedness paired with forgetfulness.<br>
+                    Introvert level-99%.<br>Honesty level:Brutal.
+
+                    <br>
+
+                    Religion - Believes in humanity as the best religion. <br>Generally an atheist but inclined towards
+                    Hinduism.<br>On a mission..<br><br><span style="color:#3b3935"> If there's anything more for enquiry
+                        then feel free to contact me through links given below. </span><br>
+
+
+
+                </b>
+            </p>
+
+        </div>
+
+        <h2 style="color:white;text-align:center;" id="banr" onclick=banner()> MADE WITH ❤️ IN INDIA.
+
+        </h2>
+
+
+
+
+        <p style="text-align:center">
+            <a href="mailto:sangrambhumia@gmail.com" target="blank">
+                <img src="./gmail.png"
+                    style="width:42px;height:42px;margin-right:40px"></a>
+            <!-- "https://cdn-icons-png.flaticon.com/512/5968/5968534.png" link gmail icon-->
+            <a href="https://www.facebook.com/sangram.bhumia" target="blank">
+                <img src="./facebook.png"
+                    style="width:42px;height:42px;margin-right:40px"></a>
+            <a href="https://www.linkedin.com/mwlite/in/sangram-bhumia-838247107" target="blank"><img
+                    src="./linkedin.png"
+                    style="width:42px;height:42px;margin-right:40px"></a>
+            <!-- "https://image.flaticon.com/icons/png/512/145/145807.png" link for linkeding icon-->
+            <a href="https://mobile.twitter.com/sangrambhumia" target="blank"><img
+                    src="./twitter.png"
+                    style="width:42px;height:42px;margin-right:0px"></a>
+        </p>
+        <div style="text-align:center;">
+            <h4 style="color:#4d7ebf;display:inline-block" onclick=alrt();>| privacy policy |</h4>
+            <h4 style="color:#4d7ebf;display:inline-block" onclick=crdt();> credits |</h4>
+
+        </div>
+    </div>
+    </div>
+    <marquee class="overlay" id="overlay" direction="up" behavior="scroll" scrollamount=6 style="color:white">
+        <p class="name">🪙</p><br><b><span style="color:red">ACKNOWLEDGEMENT !</span></b><br><br>This page is made for
+        personal use only.<br>No part of this page is official <br> or for any business use.<br>Icons, images and logos
+        on this page are the intellectual <br>properties of their respective owners.<br><br><br><br><br><br><br><br>
+
+        <span style="color:white;">
+            NOTE :-</span><br>This page is made to try and implement <br> some of the basic coding structures known to
+        me. <br>Because i am not a coder by profession or background,<br> errors
+        and bugs are inevitable. <br> This page  is made as a hobby.<br><br><br><span style="color:orange;"> Fun fact-"Spiders are the only web
+            developers<br> who feel happy to have some bugs around.</span><br> <br>Thanks for visiting ! <br><br><br>
+        <h1>♻️</h1><br><span style="color:#207839;">Reduce,Reuse,Recycle.</span>
+    </marquee>
+
+
+
+
+
+
+
+    <script>
+var sa = document.getElementById('banr');
+
+        var i = 0;
+        var txt = "         Hi...             This is Sangram Bhumia.               An agriculturist by graduation and  engineer by passion. Fairly good at science and technology.   Believing in smart work and simplicity, neither trying too hard nor giving up . Peace of mind being the ultimate goal, minding my own business . Adapting, improving & optimisng in every situation.  A pacifist by nature( live in peace & let others live in peace) i think together we can make this earth a better place to live...... Let's not forget that we live on a  speck of dirt suspended in this seemingly endless empty space of universe .   ";
+        var speed = 400;
+
+        function Writer() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(Writer, speed);
+            }
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        function alrt() {
+            alert(" Your visit to this page is totally anonymous and this page does not collect or store any of your data or any information about you. ");
+        }
+        function crdt() {
+            alert("Special thanks to w3schools for empowering me with some basic programming  knowledge with their great and intuitive coding lessons.Thanks to hosting service provider  - drv.tw.")
+        }
+
+
+        function banner() {
+            if (sa.innerHTML == "MADE WITH ❤️ IN INDIA.") {
+                sa.innerHTML = "I ❤️  NABRANGPUR.";
+            } else {
+                sa.innerHTML = "MADE WITH ❤️ IN INDIA.";
+            }
+        }
+        function tada() {
+            document.getElementById("boby").style.display = "none";
+            document.getElementById("overlay").start();
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function redirect() {
+            var pass = prompt("Enter  acess code .");
+            if (pass == "nice") { window.open("http://www.w3schools.com", '_blank'); }
+        }
+        function timu() { window.open("https://api.telegram.org/bot2070044946:AAHftnHQPglP0JQ5UHaHwNFK-9PfYc-5vN8/sendMessage?chat_id=1241475522&text=count", '_blank'); }
+    </script>
+    
+    </b></b>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCDNIUUlvcfb3UxthU7vhTa1qsVwM9Qx7o",
+          authDomain: "bhumiatribe.firebaseapp.com",
+          projectId: "bhumiatribe",
+          storageBucket: "bhumiatribe.appspot.com",
+          messagingSenderId: "442991847449",
+          appId: "1:442991847449:web:7f97d7b12251f85ad0e288",
+          measurementId: "G-KE6GZZ81VK"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+
+const d = new Date();
+var mnth= d.getMonth();
+var dat= d.getDate()
+
+if (mnth == 7 && dat==14) {banr.innerHTML+= " HAPPY  BIRTHDAY 💐 TO ME. "};
+ if (mnth == 7 && dat==15) {banr.innerHTML+= "HAPPY 🇮🇳 INDEPENDENCE DAY."};
+
+
+      </script>
+
+</body>
+
+</html>
